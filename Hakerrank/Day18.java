@@ -9,7 +9,9 @@ public class Solution {
         
         java.util.Arrays.sort(A);
         java.util.Arrays.sort(B);
-        
+        if(A.length != B.length){
+            return false;
+        }
         for(int i = 0; i < A.length; i++){
             if(!A[i].equals(B[i])){
                 return false;
@@ -28,3 +30,8 @@ public class Solution {
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
     }
 }
+
+/*
+If the lengths are different, it is not checked.
+So add the related IF statement
+*/
