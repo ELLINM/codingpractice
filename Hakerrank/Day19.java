@@ -11,7 +11,8 @@ public class Solution {
         String[] arrS = s.split("[!,?._ '@]+");
         
         int num = arrS.length;
-        if(arrS == null){
+        //if(arrS == null){
+        if(s.siEmpty()){
             System.out.println(0);
         }else{
             System.out.println(num);
